@@ -1,0 +1,301 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== HERO (IMAGEM PRINCIPAL) ===== */
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #e8e8e8;
+}
+
+.subtagline {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+/* ===== MENU ===== */
+.menu-section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #141414;
+}
+
+.menu-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.menu-descricao {
+  text-align: center;
+  color: #a0a0a0;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.categoria {
+  font-size: 1.5rem;
+  color: #c9a227;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c9a227;
+  padding-bottom: 10px;
+}
+
+.pratos-container {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.prato-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 4px solid #c9a227;
+  transition: transform 0.3s ease;
+}
+
+.prato-card:hover {
+  transform: translateX(10px);
+}
+
+.prato-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.prato-header h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.badge {
+  background-color: #c9a227;
+  color: #0d0d0d;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.descricao {
+  color: #b0b0b0;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.preco {
+  display: block;
+  font-size: 1.4rem;
+  color: #c9a227;
+  font-weight: bold;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: #c9a227;
+  font-style: italic;
+}
+
+/* ===== DEPOIMENTOS ===== */
+.depoimentos-section {
+  padding: 80px 20px;
+  background-color: #0d0d0d;
+}
+
+.depoimentos-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.depoimentos-sub {
+  text-align: center;
+  color: #808080;
+  margin-bottom: 50px;
+}
+
+.depoimentos-grid {
+  display: grid;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.depoimento-card {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+}
+
+.texto {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+.autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c9a227;
+  font-size: 0.9rem;
+}
+
+.autor strong {
+  color: #ffffff;
+}
+
+/* ===== CONTACTOS ===== */
+.contactos-section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #141414;
+}
+
+.contactos-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.info-grid {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.info-card h3 {
+  color: #c9a227;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.info-card p {
+  color: #b0b0b0;
+  margin-bottom: 5px;
+}
+
+.btn-maps {
+  display: inline-block;
+  background-color: #4285f4;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-maps:hover {
+  background-color: #3367d6;
+  transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #2a2a2a;
+  color: #606060;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .menu-section h2,
+  .depoimentos-section h2,
+  .contactos-section h2 {
+    font-size: 2rem;
+  }
+
+  .prato-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .preco {
+    font-size: 1.2rem;
+  }
+
+  .autor {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  }
+  
